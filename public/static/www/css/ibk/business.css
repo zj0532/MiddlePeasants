@@ -1,0 +1,154 @@
+.title_div{
+    width: 409px;
+    height: 46px;
+    position: absolute;
+    left: 262px;
+    top: 325px;
+}
+.title_img{
+    width: 100%;
+    height: 100%;
+}
+.left_pic_bj_div{
+    width:511px;
+    height:446px;
+    position: absolute;
+    left: 335px;
+    top: 441px;
+}
+
+.left_pic_div{
+    width: 517px;
+    height: 388px;
+    position: absolute;
+    left: 417px;
+    top: 467px;
+}
+.left_pic_img{
+    width: 100%;
+    height: 100%;
+}
+.right_text_title{
+    width: 600px;
+    height: 182px;
+    position: absolute;
+    left: 1088px;
+    top: 429px;
+    font-family:方正兰亭细黑_GBK;
+    font-weight:normal;
+    color:rgba(175,122,71,1);
+}
+.right_text_title  h1 {
+    font-size: 119px;
+    margin: 0;
+}
+.left_text_title h1{
+    font-size: 119px;
+    margin: 0;
+}
+.right_text_title span{
+    font-size: 30px;
+}
+.left_text_title span{
+    font-size: 30px;
+}
+.right_text_content{
+    position: absolute;
+    left: 1088px;
+    top: 692px;
+    width:575px;
+    height:132px;
+    font-size:18px;
+    font-family:方正兰亭细黑_GBK;
+    font-weight:400;
+    color:rgba(175,122,71,1);
+    line-height:38px;
+}
+.left_text_title{
+    width:600px;
+    height:136px;
+    position: absolute;
+    left: 407px;
+    top: 1052px;
+    font-family:方正兰亭细黑_GBK;
+    font-weight:normal;
+    color:rgba(175,122,71,1);
+}
+.left_text_content{
+    position: absolute;
+    left: 398px;
+    top: 1267px;
+    width:623px;
+    height:180px;
+    font-size:18px;
+    font-family:方正兰亭细黑_GBK;
+    font-weight:400;
+    color:rgba(175,122,71,1);
+    line-height:40px;
+}
+.right_pic_bj_div{
+    width:508px;
+    height:443px;
+    position: absolute;
+    left: 1193px;
+    top: 1112px;
+}
+.right_pic_div{
+    width: 522px;
+    height: 349px;
+    position: absolute;
+    left: 1122px;
+    top: 1165px;
+}
+.right_pic_img{
+    width: 100%;
+    height: 100%;
+}
+.foot_bj{
+    width:1920px;
+    height:89px;
+    background-image: url("/static/www/img/ibk/ibk_foot_bj.png");
+    position: absolute;
+    left:0px ;
+    top:2073px ;
+}
+.page{
+    position: absolute;
+    left: 908px;
+    top: 1982px;
+}
+
+.ibk_div_menu_text_bj{
+    width:137px;
+    height:45px;
+    border-radius:50%;
+    position: absolute;
+    left: 1545px;
+    top: 203px;
+}
+.foot_bj {
+    width: 100%;
+    height: 89px;
+    background-image: url("/static/www/img/ibk/ibk_foot_bj.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+@media (max-height:2073px) {
+    .foot_bj {
+        width: 100%;
+        height: 89px;
+        background-image: url("/static/www/img/ibk/ibk_foot_bj.png");
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        position: absolute;
+        left: 0px;
+        top: 2073px;
+    }
+}

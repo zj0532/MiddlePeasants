@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default" style="    height: 109px;">
+
+  <div class=""   style="padding-top: 19px;padding-right:52px;padding-left:52px">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+      <a class="navbar-brand" href="#"   style="  padding-top: 0px;">
+        <img class="yu_logo" src="/static/www/img/logo.jpg" alt=""  >
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav" style="float:right">
+        <li>
+          <div class="btn-group" style="    margin-top: 12px;">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               {if condition="$language=='cn'"}
+              简体中文 <span class="caret"></span>
+              {elseif condition="$language=='en'"}
+              English <span class="caret"></span>
+              {elseif condition="$language=='ar'"}
+              العربية <span class="caret"></span>
+              {/if}
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="/cn">简体中文</a></li>
+              <li><a href="/en">English</a></li>
+              <li><a href="/ar">العربية</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</nav>

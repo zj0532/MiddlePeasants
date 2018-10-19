@@ -1,0 +1,126 @@
+.wechat_bj{
+    background-image: url("/static/www/img/lian_xwm/text_bj.png");
+    width: 1283px;
+    height: 335px;
+    position: absolute;
+    left: 377px;
+    top: 436px;
+}
+.img_pic{
+    width: 100%;
+    height: 100%;
+}
+.wechat{
+    width: 245px;
+    height: 245px;
+    position: absolute;
+    left: 194px;
+    top: 45px;
+}
+.wechat_text{
+    width: 581px;
+    height: 105px;
+    position: absolute;
+    left: 531px;
+    top: 123px;
+    font-size:22px;
+    font-family:方正兰亭黑简体;
+    font-weight:400;
+    color:rgba(43,43,43,1);
+    line-height:42px;
+}
+.login_text{
+    width: 330px;
+    height: 141px;
+    position: absolute;
+    left: 575px;
+    top: 947px;
+    font-size:22px;
+    font-family:方正兰亭细黑_GBK;
+    font-weight:400;
+    color:rgba(43,43,43,1);
+    line-height:40px;
+}
+.name{
+    width: 435px;
+    height: 69px;
+    position: absolute;
+    left: 1044px;
+    top: 879px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    font-size: 35px;
+}
+.email{
+    width: 435px;
+    height: 69px;
+    position: absolute;
+    left: 1044px;
+    top: 960px;
+}
+.tel{
+    width: 435px;
+    height: 69px;
+    position: absolute;
+    left: 1044px;
+    top: 1041px;
+}
+.select{
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+select{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    padding-left: 5px;
+}
+select option{
+    padding-left: 5px;
+}
+.input{
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+.submit{
+    width: 435px;
+    height: 69px;
+    position: absolute;
+    left: 1044px;
+    top: 1123px;
+}
+.submit input{
+    background:rgba(181,128,83,1);
+    color: #ffffff;
+    letter-spacing:10px;
+}
+.foot_bj {
+    width: 100%;
+    height: 89px;
+    background-image: url("/static/www/img/ibk/ibk_foot_bj.png");
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+@media (max-height:1305px) {
+    .foot_bj {
+        width: 100%;
+        height: 89px;
+        background-image: url("/static/www/img/ibk/ibk_foot_bj.png");
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        position: absolute;
+        left: 0px;
+        top: 1305px;
+    }
+}
