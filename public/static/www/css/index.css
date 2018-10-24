@@ -1,0 +1,49 @@
+h8{
+    font-size:7px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(115,115,115,1);
+    line-height:14px;
+}
+h9{
+    font-size:20px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(61,61,61,1);
+    line-height:35px;
+}
+h10{
+    font-size:8px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(115,115,115,1);
+    line-height:15px;
+}
+small{
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(206,206,206,1);
+    line-height:14px;
+}
+.pic-padding > div{
+    padding: 10px 10px 10px 10px;
+    border-top: 1px solid rgba(231,231,231,1);
+}
+@media (min-height:600px) {
+    .new_bj{
+        position: absolute;
+        right: 0px;
+        top: 237px;
+        width:397px;
+        height:139px;
+    }
+}
+@media (min-height:800px) {
+    .new_bj{
+        position: absolute;
+        right: 0px;
+        top: 364px;
+        width:397px;
+        height:139px;
+    }
+}
