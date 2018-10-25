@@ -14,7 +14,7 @@ use think\Controller;
 class AboutMiddleController extends Controller
 {
     //企业简介
-    public function index(){
+    public function abbreviation(){
         return $this->fetch('index');
     }
     //企业文化

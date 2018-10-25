@@ -1,0 +1,28 @@
+.form-bj div input{
+    background-color:rgba(98,99,100,1) ;
+    border: none;
+    color: #FFFFFF;
+}
+.form-bj div textarea{
+    background-color:rgba(98,99,100,1) ;
+    border: none;
+    color: #FFFFFF;
+}
+.foot-bj{
+    background: url(/static/www/img/foot/foot_bj.png);
+}
+.foot-size{
+    font-size:7px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:20px;
+    opacity:0.62;
+}
+h11{
+    font-size:18px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    opacity:0.62;
+}

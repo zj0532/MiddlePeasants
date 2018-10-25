@@ -2,7 +2,7 @@
 use think\Route;
 Route::get('/','www/index/index');//中农伟业首页
 
-Route::get('/aboutMiddle','www/aboutMiddle/index');//关于中农
+Route::get('/aboutMiddle','www/aboutMiddle/abbreviation');//关于中农
     Route::get('/abbreviation','www/aboutMiddle/abbreviation');//企业简介
     Route::get('/culture','www/aboutMiddle/culture');//企业文化
     Route::get('/sightseeing','www/aboutMiddle/sightseeing');//观光生态园

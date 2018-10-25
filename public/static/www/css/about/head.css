@@ -1,0 +1,22 @@
+.foot-head{
+    position: absolute;
+    bottom: 0px;
+    background-image: url("/static/www/img/aboutHead/foot_head.png");
+    height: 87px;
+}
+.foot-text{
+    margin-top: 55px;
+}
+.foot-text li{
+    float: left;
+    margin-left: 20px;
+}
+.foot-text li a{
+    font-size:12px;
+    font-family:FZLTXHK;
+    font-weight:500;
+    color:rgba(188,235,117,1);
+}
+.foot-text li a:hover{
+    color:#FFFFFF;
+}

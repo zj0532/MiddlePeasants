@@ -1,0 +1,21 @@
+small{
+    color: #8B8B8B;
+}
+h1{
+    color: #8DBE42;
+}
+.text-bj{
+    width: 292px;
+    height: 325px;
+    background-color: #8DBE42;
+    position: absolute;
+    z-index: 2;
+    margin-top: 30px;
+}
+.text h1{
+    color: #FFFFFF;
+}
+.text  h6{
+    color: #FFFFFF;
+    line-height: 25px;
+}
