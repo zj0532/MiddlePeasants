@@ -1,0 +1,10 @@
+small{
+    font-size:14px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(101,100,99,1);
+}
+.bj{
+    background:url('/static/www/img/about_middle/breed/bj.png')  center;
+    background-size:cover;
+}
