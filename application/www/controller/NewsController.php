@@ -17,7 +17,7 @@ class NewsController extends Controller
         return $this->fetch('news');
     }
     //新闻内容
-    public function news_info(){
+    public function newsInfo(){
         return $this->fetch('news_info');
     }
 }

@@ -1,0 +1,34 @@
+h3{
+    font-size:28px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(61,61,61,1);
+    line-height:22px;
+}
+h4{
+    font-size:15px;
+    font-family:FZLTHJW--GB1-0;
+    font-weight:normal;
+    color:rgba(70,70,70,1);
+}
+h5{
+    font-size:14px;
+    font-family:FZLTHJW--GB1-0;
+    font-weight:normal;
+    color:rgba(70,70,70,1);
+    line-height:26px;
+    margin-top: 70px;
+}
+small{
+    font-size:14px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(148,148,147,1);
+}
+.hui{
+    background:rgba(206,204,204,1);
+}
+.location{
+    position: absolute;
+    top: -158px;
+}

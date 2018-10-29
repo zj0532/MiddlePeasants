@@ -11,12 +11,12 @@ Route::get('/aboutMiddle','www/aboutMiddle/abbreviation');//关于中农
 
 Route::get('/industry','www/industry/index');//全产业链
 
-Route::get('/product','www/product/index');//中农产品
+Route::get('/product','www/product/product');//中农产品
 
-Route::get('/news','www/news/index');//新闻资讯
-    Route::get('/newsInfo','www/newsInfo/index');//新闻详细
+Route::get('/news','www/news/news');//新闻资讯
+    Route::get('/newsInfo','www/news/newsInfo');//新闻详细
 
-Route::get('/home','www/home/index');//中农之家
+Route::get('/home','www/home/home');//中农之家
 
-Route::get('/contact','www/contact/index');//联系我们
+Route::get('/contact','www/contact/contact');//联系我们
 ?>
