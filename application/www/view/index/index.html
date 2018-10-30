@@ -1,6 +1,8 @@
 {include file="public/header" /}
 {include file="public/head" /}
 <link type="text/css" href="/static/www/css/index.css" rel="stylesheet">
+<link type="text/css" href="/static/admin/css/Lightbox/bootstrap-grid.min.css" rel="stylesheet">
+<link type="text/css" href="/static/admin/css/Lightbox/style.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid padding-0" >
@@ -22,15 +24,14 @@
                 </div>
             </div>
             <div class="col-md-2"></div>
+            <div class="col-md-12" style="height: 48px"></div>
         </div>
         <!--羊头像-->
         <div class="col-md-12">
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center" style="margin-top: 27px">
-               <img src="/static/www/img/index/yang_pic.png" width="100%">
                 <div class="col-md-12" style="margin-top: 10px">
                     <div class="col-md-3">
-
                         <div class="col-md-12">
                             <img src="/static/www/img/index/yang_1.png">
                         </div>
@@ -111,15 +112,88 @@
             <div class="col-md-2"></div>
         </div>
         <!--中农产品-->
-        <div class="col-md-12">
+        <div class="col-md-12 padding-0">
             <!--标题-->
-            <div class="col-md-12 text-center" style="margin-top: 38px">
+            <div class="col-md-12 text-center " style="margin-top: 38px">
                 <h9>中农产品</h9><br>
-                <small>PRODUCT DISPLAY392362h</small>
+                <small>PRODUCT DISPLAY</small>
             </div>
+            <div class="col-md-12" style="height: 35px"></div>
             <!--banner-->
-            <div class="col-md-12">
-
+            <div class="col-md-12 padding-0">
+                <div id="myCarousel" class="carousel slide">
+                    <!-- 轮播（Carousel）指标 -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- 轮播（Carousel）项目 -->
+                    <div class="carousel-inner enlarge">
+                        <div class="item active">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/hui_die_pai.png" alt="First slide">
+                                <h6>蝴蝶排</h6>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/static/www/img/index/yang_pai.png" alt="First slide" width="100%">
+                                <h4 style="margin-top: -20px;color: #8DBE42">羊排</h4>
+                                <h6 class="green">基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/yang_rou_juan.png" alt="First slide">
+                                <h6>羊肉卷</h6>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/hui_die_pai.png" alt="Second slide">
+                                <h6>蝴蝶排</h6>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/static/www/img/index/yang_pai.png" alt="Second slide" width="100%">
+                                <h4 style="margin-top: -20px;color: #8DBE42">羊排</h4>
+                                <h6 class="green">基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/yang_rou_juan.png" alt="Second slide">
+                                <h6>羊肉卷</h6>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                        <div class="item">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/hui_die_pai.png" alt="Third slide">
+                                <h6>蝴蝶排</h6>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/static/www/img/index/yang_pai.png" alt="Third slide" width="100%">
+                                <h4 style="margin-top: -20px;color: #8DBE42">羊排</h4>
+                                <h6 class="green">基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <img class="both-sides" src="/static/www/img/index/yang_rou_juan.png" alt="Third slide">
+                                <h6>羊肉卷</h6>
+                            </div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                    <!-- 轮播（Carousel）导航 -->
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span  aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                        <span  aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <div class="col-md-12" style="height: 58px"></div>
+            </div>
+            <div class="col-md-12" id="enlarge_div">
+                <img>
             </div>
         </div>
         <!--全产业链-->

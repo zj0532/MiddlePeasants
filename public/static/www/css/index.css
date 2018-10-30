@@ -1,3 +1,10 @@
+h6{
+    font-size:11px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(92,92,92,1);
+    line-height:17px;
+}
 h8{
     font-size:7px;
     font-family:FZLTXHK;
@@ -30,6 +37,24 @@ small{
     padding: 10px 10px 10px 10px;
     border-top: 1px solid rgba(231,231,231,1);
 }
+.both-sides{
+    width: 100%;
+    margin-top: 147px;
+}
+.green{
+    font-size:11px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(141,190,66,1);
+    line-height:16px;
+}
+.enlarge-pic{
+    position: fixed;
+    width: 40%;
+    top: 10px;
+    left: 10px;
+    z-index: 6;
+}
 @media (min-height:600px) {
     .new_bj{
         position: absolute;
@@ -48,4 +73,5 @@ small{
         height:139px;
     }
 }
+
 

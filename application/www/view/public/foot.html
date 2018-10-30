@@ -49,9 +49,26 @@
 </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/admin/js/bootstrap.min.js"></script>
+    <script src="/static/admin/js/zoomify.js"></script>
     <script>
       $(function(){
+          var t = true;//当t为true时，是正常状态下的
+          var img = $(this);
+          var left = $(window).width()/2-300;
+          var top = $(window).height()/2-300;
+          $('.enlarge img').click(function(){
+              var src = $(this)[0].src;
+              if(t) {
+                  t = false;
+                  $('#enlarge_div img').remove();
+                  $('#enlarge_div').show();
+                  $('#enlarge_div').append('<img src="'+src+'" style="position:fixed;left:'+left+'px ;top:'+top+'px ;z-index: 6;width:600px;height:400px">');
+              } else {
+                  t = true;
+                  $('#enlarge_div').hide();
+              }
 
+          });
       })
     </script>
   </body>

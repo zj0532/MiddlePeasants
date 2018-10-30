@@ -6435,7 +6435,6 @@ button.close {
   color: #ff3333;
   text-align: left;
   font-family: "微软雅黑";
-    g
 }
 .carousel-caption .btn {
   text-shadow: none;
@@ -6453,6 +6452,7 @@ button.close {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .icon-prev {
     margin-left: -10px;
+
   }
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
