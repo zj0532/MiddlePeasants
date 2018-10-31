@@ -9,6 +9,10 @@
     float: left;
     margin-left: 10px;
 }
+.text-menu ul li a{
+    color: #929292;
+}
 .text-menu ul li a:hover{
     color: #8DBE42;
+    text-decoration: none;
 }

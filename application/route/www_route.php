@@ -14,7 +14,7 @@ Route::get('/industry','www/industry/index');//全产业链
 Route::get('/product','www/product/product');//中农产品
 
 Route::get('/news','www/news/news');//新闻资讯
-    Route::get('/newsInfo','www/news/newsInfo');//新闻详细
+    Route::get('/newsInfo/:page','www/news/newsInfo');//新闻详细
 
 Route::get('/home','www/home/home');//中农之家
 

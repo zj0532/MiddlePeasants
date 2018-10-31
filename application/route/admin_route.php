@@ -16,27 +16,15 @@ Route::post('/admcncp/index_add','admin/index/post_index_add');//管理员 添�
 Route::get('/admcncp/indexEdit/:id','admin/index/get_index_edit');//管理员 编辑
 Route::post('/admcncp/indexEdit/:id','admin/index/post_index_edit');//管理员 编辑
 
- 
- 
-//代理商
-Route::get('/admcncp/daili/:page','admin/index/get_daili');
-Route::get('/admcncp/dailiAdd/:page','admin/index/get_daili_add');
-Route::post('/admcncp/dailiAdd/:page','admin/index/post_daili_add');
-Route::get('/admcncp/dailiEdit/:id/:page','admin/index/get_daili_edit');
-Route::post('/admcncp/dailiEdit/:id/:page','admin/index/post_daili_edit');
-Route::get('/admcncp/daili2/:id/:page','admin/index/get_daili2');
-Route::get('/admcncp/daili2Edit/:id/:upid/:page','admin/index/get_daili2_edit');
-Route::post('/admcncp/daili2Edit/:id/:upid/:page','admin/index/post_daili2_edit');
-Route::get('/admcncp/daili2Mem/:id/:yqm/:page','admin/index/get_daili2_member');
 
 
 //新闻
-Route::get('admcncp/news/:page','admin/index/get_news_list');
-Route::get('admcncp/newsAdd','admin/index/get_news_add');
-Route::post('admcncp/newsAdd','admin/index/post_news_add');
-Route::get('admcncp/newsEdit/:id/:page','admin/index/get_news_edit');
-Route::post('admcncp/newsEdit/:id/:page','admin/index/post_news_edit');
-Route::get('admcncp/newsDel/:id/:page','admin/index/get_news_del');
+Route::get('admcncp/news/:page','admin/new/get_news_list');
+Route::get('admcncp/newsAdd','admin/new/get_news_add');
+Route::post('admcncp/newsAdd','admin/new/post_news_add');
+Route::get('admcncp/newsEdit/:id/:page','admin/new/get_news_edit');
+Route::post('admcncp/newsEdit/:id/:page','admin/new/post_news_edit');
+Route::get('admcncp/newsDel/:id/:page','admin/new/get_news_del');
 
 
 //联系我们

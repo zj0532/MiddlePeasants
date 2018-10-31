@@ -5,3 +5,10 @@ h3{
     color:rgba(89,89,89,1);
     line-height:18px;
 }
+h6{
+    font-size:11px;
+    font-family: FZLTXHK, serif;
+    font-weight:400;
+    color:rgba(129,129,129,1);
+    line-height:21px;
+}
