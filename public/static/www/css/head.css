@@ -16,3 +16,20 @@
     color: #8DBE42;
     text-decoration: none;
 }
+.head-about{
+    position: absolute;
+    top: -79px;
+}
+@media (min-width:1367px) {
+    .text-menu{
+        font-size:16px;
+        font-family:FZLTHJW--GB1-0;
+        font-weight:normal;
+        color:rgba(0,130,130,1);
+        margin-top: 5px;
+    }
+    .head-about{
+        position: absolute;
+        top: -83px;
+    }
+}

@@ -5,6 +5,13 @@ h6{
     color:rgba(92,92,92,1);
     line-height:17px;
 }
+h7{
+    font-size:14px;
+    font-family: FZLTXHK;
+    font-weight:600;
+    color:rgba(92,92,92,1);
+    line-height:21px;
+}
 h8{
     font-size:7px;
     font-family:FZLTXHK;
@@ -37,6 +44,9 @@ small{
     padding: 10px 10px 10px 10px;
     border-top: 1px solid rgba(231,231,231,1);
 }
+.pic-padding div:hover{
+    background-color: RGBA(231, 231, 231, 1);
+}
 .both-sides{
     width: 100%;
     margin-top: 147px;
@@ -48,29 +58,53 @@ small{
     color:rgba(141,190,66,1);
     line-height:16px;
 }
-.enlarge-pic{
-    position: fixed;
-    width: 40%;
-    top: 10px;
-    left: 10px;
-    z-index: 6;
+.chain h9{
+    font-size:28px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:56px;
+}
+.chain small{
+    font-size:14px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(227,227,227,1);
+    line-height:18px;
+}
+.new-text a{
+    color: RGBA(141, 141, 141, 1);
+}
+.new-text a:hover{
+    color: rgba(122,177,69,1);
+    text-decoration: none;
+}
+.news-more a{
+    color:rgba(85,85,85,1);
+}
+.news-more a:hover{
+    text-decoration: none;
+    color: rgba(122,177,69,1);
 }
 @media (min-height:600px) {
     .new_bj{
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 237px;
         width:397px;
         height:139px;
     }
 }
-@media (min-height:800px) {
+@media (min-width:1367px) {
     .new_bj{
         position: absolute;
-        right: 0px;
+        right: 0;
         top: 364px;
         width:397px;
         height:139px;
+    }
+    .margin-1{
+        margin-top: 109px;
     }
 }
 

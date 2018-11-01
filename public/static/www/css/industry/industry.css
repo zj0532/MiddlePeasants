@@ -35,12 +35,23 @@
     background: url("/static/www/img/industry/8_bj.png") center;
     background-size:100% 100%;
 }
+.earth{
+    width:375px;
+    height:231px;
+}
 
 small{
     font-size:14px;
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(142,142,142,1);
+}
+.one-bj h6{
+    font-size:11px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(145,145,145,1);
+    line-height:23px;
 }
 .two h3{
     font-size:25px;
@@ -170,4 +181,11 @@ small{
     font-weight:400;
     color:rgba(255,255,255,1);
     line-height:28px;
+}
+@media (min-width:1367px) {
+    .earth{
+        width:375px;
+        height:231px;
+        margin-bottom: 93px;
+    }
 }

@@ -9,20 +9,17 @@
             <div class="col-md-12" style="height: 44px"></div>
             {volist name="list" id="vo"}
             <div class="col-md-12">
-                <div class="col-md-2">
+                <div class="col-md-2" style="padding-left: 0">
                     <img src="{$imgpath}{$vo.ns_img}" width="100%">
                 </div>
                 <div class="col-md-8">
                     <h5>{$vo.ns_title}</h5>
                     <h7>
                         {$vo.ns_descript}
-                        <!--春渐暖，湖羊美，到了品尝美味羊肉的最佳季节。羊肉鲜美的味道常常让人回味不已。羊的品种有很多，-->
-                        <!--黄羊、山羊、绵羊、羚羊......哪一种羊的味道最鲜美呢？俗话说：“一千个读者，就有一千个哈姆雷特”，-->
-                        <!--哪一种羊的肉最鲜美，答案当然是——湖羊。湖羊是我国特有的白色羔皮绵羊地方品.............-->
                     </h7>
                 </div>
                 <div class="col-md-2" style="margin-top: 35px">
-                    <a href="/newsInfo/{$vo.ns_id}"><img src="/static/www/img/news/info.png" width="100%"></a>
+                    <a  href="/newsInfo/{$vo.ns_id}"><img class="info-img" src="/static/www/img/news/info.png"></a>
                 </div>
                 <div class="col-md-12" style="height: 15px;"></div>
                 <!--线-->

@@ -1,11 +1,12 @@
-.foot-head{
+.foot_head{
     position: absolute;
-    bottom: 0px;
-    background-image: url("/static/www/img/aboutHead/foot_head.png");
-    height: 87px;
+    bottom: 0;
+    right: 0;
+    padding-left: 30px;
+    padding-right: 0;
 }
 .foot-text{
-    margin-top: 55px;
+    margin-top: 50px;
 }
 .foot-text li{
     float: left;
@@ -16,7 +17,17 @@
     font-family:FZLTXHK;
     font-weight:500;
     color:rgba(188,235,117,1);
+    line-height: 31px;
 }
 .foot-text li a:hover{
     color:#FFFFFF;
+}
+@media (min-width:1367px) {
+    .foot-text li a{
+        font-size:16px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(188,235,117,1);
+        line-height: 36px;
+    }
 }

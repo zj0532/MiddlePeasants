@@ -3,9 +3,19 @@
     background-size: 100% 100%;
     height: 242px;
 }
-h6{
+.head-bj h6{
     font-size:11px;
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(254,250,250,1);
+    line-height:19px;
+}
+@media (min-width:1367px) {
+    .head-bj h6{
+        font-size:16px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(254,250,250,1);
+        line-height:17px;
+    }
 }

@@ -8,3 +8,13 @@ small{
     background:url('/static/www/img/about_middle/breed/bj.png')  center;
     background-size:cover;
 }
+.body-top{
+    height: 41px;
+}
+.body-top h3{
+    font-size:28px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(61,61,61,1);
+    line-height:22px;
+}

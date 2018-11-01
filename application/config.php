@@ -241,7 +241,6 @@ return [
     // +----------------------------------------------------------------------
     'web_name' => '中农伟业',
     'web_name2' => 'DOBAI',
-    'web_phone' => '',
     'user_upload_path' => '/static/user/uploads/',
     'admin_upload_path' => '/static/admin/uploads/',
     'news_upload_path' => '/static/uploads/news/',

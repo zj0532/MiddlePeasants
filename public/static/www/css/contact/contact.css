@@ -3,9 +3,14 @@ h5{
     font-family:FZLTHJW--GB1-0;
     font-weight:normal;
     color:rgba(165,164,164,1);
-    line-height:90px;
 }
 .underline{
-    height:2px;
+    height:1px;
     background:rgba(179,179,179,1);
+}
+.body-content{
+    margin-left: 45px;
+}
+.margin-top-1{
+    margin-top: 33px;
 }

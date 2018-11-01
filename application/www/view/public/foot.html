@@ -1,6 +1,6 @@
 <link type="text/css" href="/static/www/css/foot.css" rel="stylesheet">
 <div class="container-fluid padding-0">
-    <div class="row margin-0 ">
+    <div class="row margin-0 foot-h8">
         <div class="col-md-12 foot-bj padding-0">
             <div class="col-md-2"></div>
             <div class="col-md-8" style="margin-top: 38px">
@@ -18,7 +18,7 @@
                 <div class="col-md-2">
                     <div class="col-md-12 text-center">
                         <img src="/static/www/img/foot/wechat.png"  style="margin-bottom: 10px;width: 100%">
-                        <h8>信扫一扫添加企业微信</h8>
+                        <h8>微信扫一扫添加企业微信</h8>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -50,10 +50,12 @@
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="/static/admin/js/bootstrap.min.js"></script>
     <script src="/static/admin/js/zoomify.js"></script>
+    <script src="/static/admin/js/banner/Cooldog.js"></script>
     <script>
       $(function(){
           var t = true;//当t为true时，是正常状态下的
           var img = $(this);
+          // alert($(window).width());
           var left = $(window).width()/2-300;
           var top = $(window).height()/2-300;
           $('.enlarge img').click(function(){

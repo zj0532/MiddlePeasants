@@ -1,21 +1,146 @@
+
 small{
     color: #8B8B8B;
 }
 h1{
     color: #8DBE42;
 }
+.text-one h9{
+    font-size:28px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(61,61,61,1);
+    line-height:22px;
+}
+.text-two h10{
+    font-size:14px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(120,120,120,1);
+}
 .text-bj{
-    width: 292px;
-    height: 325px;
+    width: 289px;
+    height: 352px;
     background-color: #8DBE42;
     position: absolute;
     z-index: 2;
     margin-top: 30px;
 }
-.text h1{
-    color: #FFFFFF;
+.text-one h1{
+    font-size:39px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(141,190,66,1);
+    line-height:51px;
+    margin-top: 15px;
 }
-.text  h6{
-    color: #FFFFFF;
-    line-height: 25px;
+.text-one  h6{
+    font-size:13px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(141,190,66,1);
+    line-height:17px;
+}
+.enterprise-mission{
+    width:357px;
+    height:222px;
+}
+.enterprise-mission p{
+    font-size:11px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(91,91,91,1);
+    line-height:21px;
+}
+.img-one img{
+    width:517px;
+    height:361px;
+}
+.text-two h1{
+    font-size:39px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:50px;
+}
+.text-two h6{
+    font-size:13px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:17px;
+}
+.text-two p{
+    font-size:11px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:25px;
+}
+.text-two img{
+    width:674px;
+    height:450px;
+}
+.foot-hight{
+    height: 119px;
+}
+@media (min-width:1367px) {
+    .text h1{
+        font-size:39px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(141,190,66,1);
+        line-height:51px;
+    }
+    .text h6{
+        font-size:13px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(141,190,66,1);
+        line-height:17px;
+    }
+    .text h9{
+        font-size:28px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(61,61,61,1);
+        line-height:22px;
+    }
+    .text h10{
+        font-size:14px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(120,120,120,1);
+    }
+    .enterprise-mission p{
+        font-size:16px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(91,91,91,1);
+        line-height:30px;
+    }
+    .text img:nth-child(1){
+        width:523px;
+        height:366px;
+    }
+    .img-one img{
+        width:728px;
+        height:509px;
+    }
+    .text-two img{
+        width:951px;
+        height:634px;
+    }
+    .text-bj{
+        width:407px;
+        height:496px;
+        background-color: #8DBE42;
+        position: absolute;
+        z-index: 2;
+        margin-top: 80px;
+    }
+    .enterprise-mission{
+        width:412px;
+        height:313px;
+    }
 }

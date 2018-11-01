@@ -4,3 +4,72 @@ small{
 h3{
     margin: 0px;
 }
+h5{
+    font-size:19px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(104,104,104,1);
+    line-height:24px;
+}
+.green-line{
+    margin-top: 197px;
+    position: absolute;
+    right: 0;
+}
+.enterprise-mission{
+    margin-top: 71px;
+}
+.two-left h3:not(:first-child){
+    margin-top: 55px;
+}
+.two-left-img img{
+    position: absolute;
+    right: 0;
+}
+.two-left-img img:nth-child(2){
+    margin-top: 114px;
+}
+.two-left-img img:nth-child(3){
+    margin-top: 259px;
+}
+.img-1{
+    width:387px;
+    height:255px;
+}
+@media (min-width:1367px) {
+    .img-1{
+        width:546px;
+        height:317px;
+    }
+    .green-line{
+        margin-top: 282px;
+        position: absolute;
+        right: 0;
+    }
+    .enterprise-mission{
+        margin-top: 49px;
+    }
+    h5{
+        font-size:22px;
+        font-family:FZLTXHK;
+        font-weight:400;
+        color:rgba(104,104,104,1);
+        line-height:51px;
+        margin: 0;
+    }
+    h3{
+        margin: 0px;
+        font-size: 30px;
+        font-family:FZLTXHK;
+        font-weight:400;
+    }
+    .two-left-img img:nth-child(2){
+        margin-top: 152px;
+    }
+    .two-left-img img:nth-child(3){
+        margin-top: 375px;
+    }
+    .div-1{
+        width: 522px;
+    }
+}
