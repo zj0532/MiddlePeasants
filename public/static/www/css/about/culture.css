@@ -1,6 +1,13 @@
 small{
     color: #8B8B8B;
 }
+h2{
+    font-size:28px;
+    font-family:FZLTXHK;
+    font-weight:400;
+    color:rgba(61,61,61,1);
+    line-height:22px;
+}
 h3{
     margin: 0px;
 }

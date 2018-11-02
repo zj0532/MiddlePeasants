@@ -33,7 +33,7 @@ $(function () {
 	});
 	
 	//图片自动轮播
-	timer = setInterval(btn_right, 4000);
+	// timer = setInterval(btn_right, 4000);
 	
 	//点击上一张的封装函数
 	function btn_left() {

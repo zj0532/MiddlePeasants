@@ -14,12 +14,12 @@
         <div class="col-md-12" style="background:rgba(240,252,222,1);">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <div class="col-md-8" style="margin-top: 27px">
+                <div class="col-md-8" style="margin: 27px 0 0 15px">
                     <img src="/static/www/img/index/pin_zhong.png" width="100%">
                 </div>
                 <div class="col-md-1"></div>
-                <div class="col-md-3" style="margin-top: 84px">
-                    <a href="/product"><img src="/static/www/img/index/button_more.png" width="80%"></a>
+                <div class="col-md-3" style="margin: 84px 0 0 0">
+                    <a href="/product"><img src="/static/www/img/index/button_more.png" style="width: 80%;margin-left: 45px"></a>
                 </div>
             </div>
             <div class="col-md-2"></div>
@@ -30,13 +30,13 @@
             <div class="col-md-2"></div>
             <div class="col-md-8 text-center" style="margin-top: 27px">
                 <div class="col-md-12" style="margin-top: 10px">
-                    <div class="col-md-3">
+                    <div class="col-md-3" style="margin-left: -15px">
                         <div class="col-md-12">
                             <img src="/static/www/img/index/yang_1.png" width="100%">
                         </div>
                         <div class="col-md-12" style="height: 20px"></div>
-                        <h7>青山羊</h7>
-                        <div class="col-md-12">
+                        <div class="col-md-12"><h7>青山羊</h7></div>
+                        <div class="col-md-12" >
                             <img src="/static/www/img/index/yang_xian.png">
                         </div>
                         <div class="col-md-12">
@@ -98,15 +98,15 @@
             <div class="col-md-2"></div>
             <div class="col-md-8" style="margin-top: 37px">
                 <div class="col-md-4">
-                    <img src="/static/www/img/index/tel.png" width="100%">
+                    <img src="/static/www/img/index/tel.png" style="width: 100%">
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-7">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8 text-center">
-                        <img src="/static/www/img/index/IOCN.png" width="100%">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10 text-center">
+                        <img src="/static/www/img/index/IOCN.png" style="width: 100%">
                     </div>
-                    <div class="col-md-2"></div>
+                    <div class="col-md-1"></div>
 
                    <div class="col-md-12" style="margin-top: 23px">
                        <h10>中农之家是中农伟业有限公司推出的一款互联网养羊理财产品，是一家致力于改善农牧产业链结构的垂直类互联网+品牌。</h10>
@@ -144,15 +144,31 @@
                         <li class="p3">
                             <img src="/static/www/img/index/hui_die_pai.png" alt="">
                             <div class="col-md-12 banner-text">
-                                <p>羊排</p>
-                                <p>基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</p>
+                                <br>
+                                <p>蝴蝶排</p><br>
+                                <div>
+                                    <span>基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</span>
+                                </div>
                             </div>
                         </li>
                         <li class="p4">
                             <img src="/static/www/img/index/yang_pai.png" alt="">
+                            <div class="col-md-12 banner-text">
+                                <p>羊排</p><br>
+                                <div>
+                                    <span>基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</span>
+                                </div>
+                            </div>
                         </li>
                         <li class="p5">
                             <img src="/static/www/img/index/yang_rou_juan.png" alt="">
+                            <div class="col-md-12 banner-text">
+                                <br>
+                                <p>羊肉卷</p><br>
+                                <div>
+                                    <span>基地饲养的羊，从饲料配方、饲料加工、羊羔饲养到成料加工、羊羔饲养到成</span>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -212,28 +228,27 @@
                         <div class="col-md-5">
                             <img src="{$new_imgpath}{$vo.ns_img}" width="100%">
                         </div>
-                        <div class="col-md-7  new-text">
+                        <div class="col-md-7  new-text" style="padding-right: 0">
                             <h8>{$vo.ns_descript}......</h8>
                             <br>
                             <h8><a href="/newsInfo/{$vo.ns_id}">查看详情</a></h8>
                         </div>
                     </div>
                     {/volist}
-                    <div class="col-md-12 text-center news-more">
+                    <div class="col-md-12 text-center news-more" style="border-bottom:1px solid rgba(231,231,231,1); ">
                         <h10><a href="/news">查看更多 >></a></h10>
                     </div>
-                    <div class="col-md-12"></div>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-5">
-                    <img src="/static/www/img/index/new_big.png" width="100%">
+                    <img class="img-2" src="/static/www/img/index/new_big.png">
                 </div>
                 <div class="col-md-1">
                     <img class="new_bj" src="/static/www/img/index/new_bj.png">
                 </div>
-                <div class="col-md-12 margin-1"></div>
             </div>
         </div>
+        <div class="col-md-12 margin-1"></div>
     </div>
 </div>
 {include file="public/foot" /}
