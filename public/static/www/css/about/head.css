@@ -1,22 +1,20 @@
-.foot_head{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-left: 30px;
-    padding-right: 0;
+.head-boom{
+    height: 30px;
+    background-color: #8dbe42;
 }
 .foot-text{
-    margin-top: 50px;
+    /*position: absolute;*/
 }
 .foot-text li{
     float: left;
-    margin-left: 20px;
+    z-index: 2;
+    margin:0 0  0 20px;
 }
 .foot-text li a{
     font-size:12px;
     font-family:FZLTXHK;
     font-weight:500;
-    color:rgba(188,235,117,1);
+    color:#F2F2F2;
     line-height: 31px;
 }
 .foot-text li a:hover{
