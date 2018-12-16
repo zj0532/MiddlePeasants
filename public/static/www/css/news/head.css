@@ -1,7 +1,12 @@
-.head-bj{
-    background-image: url("/static/www/img/news/head.png");
-    background-size: 100% 100%;
-    height: 242px;
+.head-boom{
+    height: 30px;
+    background-color: #8dbe42;
+}
+.foot-text li{
+    font-size: 14px;
+    color: #FFF;
+    line-height: 30px;
+    margin-left: 20px;
 }
 .head-bj h6{
     font-size:11px;
@@ -17,5 +22,11 @@
         font-weight:400;
         color:rgba(254,250,250,1);
         line-height:17px;
+    }
+    .foot-text li{
+        font-size: 16px;
+        color: #FFF;
+        line-height: 30px;
+        margin-left: 20px;
     }
 }

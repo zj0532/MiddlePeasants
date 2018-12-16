@@ -32,13 +32,13 @@ Route::get('admcncp/lxwm/:page','admin/index/get_lxwm_list');
 Route::get('admcncp/lxwmEdit/:id/:page','admin/index/get_lxwm_edit');
 Route::post('admcncp/lxwmEdit/:id/:page','admin/index/post_lxwm_edit');
 
-//迪拜投资房产投资优势
-Route::get('admcncp/youShi/:page','admin/youShi/get_youShi_list');
-Route::get('admcncp/youShiAdd','admin/youShi/get_youShi_add');
-Route::post('admcncp/youShiAdd','admin/youShi/post_youShi_add');
-Route::get('admcncp/youShiEdit/:id','admin/youShi/get_youShi_edit');
-Route::post('admcncp/youShiEdit/:id','admin/youShi/post_youShi_edit');
-Route::get('admcncp/youShiDel/:id','admin/youShi/get_youShi_del');
+//中农产品
+Route::get('admcncp/product/','admin/product/get_product_list');
+Route::get('admcncp/productAdd','admin/product/get_product_add');
+Route::post('admcncp/productAdd','admin/product/post_product_add');
+Route::get('admcncp/productEdit/:id','admin/product/get_product_edit');
+Route::post('admcncp/productEdit/:id','admin/product/post_product_edit');
+Route::get('admcncp/productDel/:id','admin/product/get_product_del');
 
 //主营业务
 Route::get('admcncp/yeWu','admin/YeWu/get_yeWu_list');

@@ -244,7 +244,7 @@ return [
     'user_upload_path' => '/static/user/uploads/',
     'admin_upload_path' => '/static/admin/uploads/',
     'news_upload_path' => '/static/uploads/news/',
-    'you_shi_upload_path' => '/static/uploads/youshi/',
+    'product_upload_path' => '/static/uploads/product/',
     'ye_wu_upload_path' => '/static/uploads/yewu/',  //主营业务
     'yuming' => 'http://www.dubai.com',
 

@@ -1,7 +1,12 @@
-.bj-pic{
-    background-image: url("/static/www/img/product/head.png");
-    background-size: 100% 100%;
-    height: 242px;
+.head-boom{
+    height: 30px;
+    background-color: #8dbe42;
+}
+.foot-text li{
+    color: #FFF;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 20px;
 }
 .bj-pic h6{
     font-size:11px;

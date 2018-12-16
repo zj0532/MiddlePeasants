@@ -2,16 +2,13 @@
     height: 30px;
     background-color: #8dbe42;
 }
-.foot-text{
-    /*position: absolute;*/
-}
 .foot-text li{
     float: left;
     z-index: 2;
     margin:0 0  0 20px;
 }
 .foot-text li a{
-    font-size:12px;
+    font-size:14px;
     font-family:FZLTXHK;
     font-weight:500;
     color:#F2F2F2;
