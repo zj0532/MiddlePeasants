@@ -22,13 +22,20 @@ class NewsController extends Controller
     {
         parent::__construct($request);
         $this->new = new NewsModel();
+        try{
+            $banner = $this->banner->order('br_order')->select();
+            $this->assign('banner',$banner);
+            $this->assign('banner_pic',config("banner_upload_path"));
+        }catch (\Exception $e){
+            $this->log($e->getMessage());
+            $this->error('页面错误！');
+        }
     }
 
     public function news(){
         try{
             $list = $this->new ->order('ns_intime desc')->paginate(4);
-            $imgpath=config("news_upload_path");
-            $this->assign('imgpath',$imgpath);
+            $this->assign('imgpath',config("news_upload_path"));
             $this->assign('list',$list);
         }catch (\Exception $e){
             Log::write($e->getMessage(),'error');

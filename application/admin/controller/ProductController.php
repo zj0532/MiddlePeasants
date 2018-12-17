@@ -17,17 +17,9 @@ use think\Log;
 
 class ProductController extends Controller
 {
-
-    public function __construct(Request $request = null)
-    {
-        parent::__construct($request);
-
-    }
-
     //中农产品list
     public function get_product_list(){
         try{
-            $sidebar='3';
             //判断过期时间
             $this->session_end();
             //判断登陆状态
@@ -38,9 +30,9 @@ class ProductController extends Controller
             $imgpath=config("product_upload_path");
             $this->assign('imgpath',$imgpath);
             $this->assign('list',$list);
-            $this->assign('sidebar',$sidebar);
+            $this->assign('sidebar','3');
         }catch (\Exception $e){
-            Log::write($e->getMessage(),'error');
+            $this->log($e->getMessage(),'error');
             $this->error($e->getMessage());
         }
         return $this->fetch('product');
@@ -142,7 +134,7 @@ class ProductController extends Controller
             }
             // 获取表单上传文件 例如上传了001.jpg
             $file = request()->file('pt_pic');
-            if(!$file){
+            if(is_null($file)){
                 return show(404,'请选择图片！',200);
             }
             $imgname = "";
@@ -171,7 +163,7 @@ class ProductController extends Controller
             ],['pt_id'=>$data['pt_id']]);
         }catch (\Exception $e){
             Log::write($e->getMessage(),'error');
-            return show(200,'编辑中农产品失败！',200);
+            return show(404,'编辑中农产品失败！',200);
         }
         return show(200,'编辑中农产品成功！',200);
     }
@@ -182,7 +174,7 @@ class ProductController extends Controller
             $this->session_end();
             //判断登陆状态
             if (!session('?admin_dengluming')) {
-                return redirect('/admcncp/login');exit();
+                return redirect('/admcncp/login');
             }
             $data = input();//通过助手将POST所有数据交给 data
 
@@ -191,6 +183,6 @@ class ProductController extends Controller
             $this->error($e->getMessage());
         }
 //        return show(200,'删除成功！',200);
-        $this->success('删除成功！');
+        $this->success('删除成功！','/admcncp/product');
     }
 }

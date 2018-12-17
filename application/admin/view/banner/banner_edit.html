@@ -17,19 +17,19 @@
           <div class="col-lg-12">
             <section class="panel">
               <header class="panel-heading">
-                编辑 中农产品
+                编辑 Banner
               </header>
               <div class="panel-body">
-                             <form class="form-horizontal" id="product_from_add" >
+                             <form class="form-horizontal" id="from_data" >
                                  <div class="form-group">
                                      <label class="col-lg-2 control-label">语言</label>
                                      <div class="col-lg-10">
-                                         <select class="form-control m-bot15" name="pt_language">
-                                          {if condition="$list.pt_language=='cn'"}
+                                         <select class="form-control m-bot15" name="br_language">
+                                          {if condition="$list.br_language=='cn'"}
                                           <option  value="cn" selected>中文</option>
-                                          {elseif condition="$list.pt_language=='en'"}
+                                          {elseif condition="$list.br_language=='en'"}
                                           <option  value="en" selected>英文</option>
-                                          {elseif condition="$list.pt_language=='ae'"}
+                                          {elseif condition="$list.br_language=='ae'"}
                                           <option  value="ae" selected>阿拉伯文</option>
                                           {/if}
                                               <option  value="cn">中文</option>
@@ -41,29 +41,29 @@
                                  <div class="form-group">
                                      <label class="col-lg-2 control-label">标题</label>
                                      <div class="col-lg-10">
-                                         <input class="form-control" id="pt_title" name="pt_title" value="{$list.pt_title}" required placeholder="标题">
+                                         <input class="form-control" id="br_title" name="br_title" value="{$list.br_title}" required placeholder="标题">
                                      </div>
                                  </div>
                                  <div class="form-group">
                                      <label class="col-lg-2 control-label">封面图片</label>
                                      <div class="col-lg-10">
-                                         <input type="file"   id="pt_pic" name="pt_pic" >
-                                         {if condition="$list.pt_pic!=''"}
-                                         <img src="{$imgpath}{$list.pt_pic}" height="150">
+                                         <input type="file"   id="br_pic" name="br_pic" >
+                                         {if condition="$list.br_pic!=''"}
+                                         <img src="{$imgpath}{$list.br_pic}" height="150">
                                          {/if}
                                      </div>
                                  </div>
                                  <div class="form-group">
                                      <label class="col-lg-2 control-label">排序</label>
                                      <div class="col-lg-10">
-                                         <input class="form-control" type="text" name="pt_order" value="{$list.pt_order}" required>
+                                         <input class="form-control" type="text" name="br_order" value="{$list.br_order}" required>
                                      </div>
                                  </div>
                                   <div class="form-group">
                                      <div class="col-lg-offset-2 col-lg-10">
-                                     <input type="hidden" id="id" name="pt_id" value="{$list.pt_id}">
-                                         <input type="hidden" id="product_type" value="2">
-                                         <button class="btn btn-danger"  id="product_add" type="button">提交</button>
+                                     <input type="hidden" id="id" name="br_id" value="{$list.br_id}">
+                                         <input type="hidden" id="from_type" value="banner_edit">
+                                         <button class="btn btn-danger"  id="from_button" type="button">提交</button>
                                      </div>
                                  </div>
                              </form>

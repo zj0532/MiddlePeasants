@@ -34,13 +34,29 @@
   $(function() {
     $('select.styled').customSelect();
 
-      $('#product_add').click(function () {
-          var formData = new FormData($('#product_from_add')[0]);
-          var form_type = $('#product_type').val();
-          if(form_type == '1'){
-              var url = '/admcncp/productAdd/';
-          }else {
-              var url = '/admcncp/productEdit/';
+      $('#from_button').click(function () {
+          'use strict';
+          let formData = new FormData($('#from_data')[0]);
+          let form_type = $('#from_type').val();
+          let url;
+          let location_url;
+          switch (form_type){
+              case 'banner_add':
+                  url = '/admcncp/bannerAdd';
+                  location_url = '/admcncp/banner/';
+                  break;
+              case 'banner_edit':
+                  url = '/admcncp/bannerEdit';
+                  location_url = '/admcncp/banner/';
+                  break;
+              case 'product_add':
+                  url = '/admcncp/productAdd';
+                  location_url = '/admcncp/product/';
+                  break;
+              case 'product_edit':
+                  url ='/admcncp/productEdit/';
+                  location_url = '/admcncp/product/';
+                  break;
           }
 
           $.ajax({
@@ -54,7 +70,7 @@
               success: function (data) {
                     if(data.status == 200){
                         alert(data.message);
-                        location.href = "/admcncp/product/";
+                        location.href = location_url;
                     }else{
                         alert(data.message);
                     }

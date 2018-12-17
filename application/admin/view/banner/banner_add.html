@@ -15,15 +15,14 @@
                 <div class="col-lg-12">
                     <section class="panel">
                         <header class="panel-heading">
-                            新增 中农产品
+                            新增 Banner
                         </header>
                         <div class="panel-body">
-                            <!--<form class="form-horizontal" role="form" method="post" enctype="multipart/form-data">-->
-                            <form class="form-horizontal" id="product_from_add">
+                            <form class="form-horizontal" id="from_data">
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">语言</label>
                                     <div class="col-lg-10">
-                                        <select class="form-control m-bot15" name="pt_language">
+                                        <select class="form-control m-bot15" name="br_language">
                                             <option  value="cn">中文</option>
                                             <option  value="en">英文</option>
                                             <option  value="ae">阿拉伯文</option>
@@ -33,25 +32,25 @@
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">标题</label>
                                     <div class="col-lg-10">
-                                        <input class="form-control" id="pt_title" name="pt_title" required placeholder="标题">
+                                        <input class="form-control" id="br_title" name="br_title" required placeholder="标题">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">图片</label>
                                     <div class="col-lg-10">
-                                        <input type="file" id="pt_pic" name="pt_pic">
+                                        <input type="file" id="br_pic" name="br_pic">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="col-lg-2 control-label">排序</label>
                                     <div class="col-lg-10">
-                                        <input class="form-control" type="text" name="pt_order" placeholder="排序顺序从大到小">
+                                        <input class="form-control" type="text" name="br_order" placeholder="排序顺序从小到大">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-lg-offset-2 col-lg-10">
-                                        <input type="hidden" id="product_type" value="1">
-                                        <button class="btn btn-danger" id="product_add"  type="button">提交</button>
+                                        <input type="hidden" id="from_type" value="banner_add">
+                                        <button class="btn btn-danger" id="from_button"  type="button">提交</button>
                                     </div>
                                 </div>
                             </form>

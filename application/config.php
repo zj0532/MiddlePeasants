@@ -244,8 +244,8 @@ return [
     'user_upload_path' => '/static/user/uploads/',
     'admin_upload_path' => '/static/admin/uploads/',
     'news_upload_path' => '/static/uploads/news/',
-    'product_upload_path' => '/static/uploads/product/',
-    'ye_wu_upload_path' => '/static/uploads/yewu/',  //主营业务
+    'product_upload_path' => '/static/uploads/product/',    //中农产品
+    'banner_upload_path' => '/static/uploads/banner/',  //banner
     'yuming' => 'http://www.dubai.com',
 
 	'SESSION_OPTIONS' => array(

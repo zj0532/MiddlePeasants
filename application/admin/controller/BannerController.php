@@ -2,49 +2,39 @@
 /**
  * Created by PhpStorm.
  * User: Administrator
- * Date: 2018/9/25 0025
- * Time: 11:10
+ * Date: 2018/12/17 0017
+ * Time: 10:58
  */
 
 namespace app\admin\controller;
 
 
 use think\Controller;
-use app\admin\Model\YeWuModel;
-use think\Request;
-use think\Exception;
 
-class YeWuController extends Controller
+class BannerController extends Controller
 {
-    private $ye_wu;
-    public function __construct(Request $request = null)
-    {
-        parent::__construct($request);
-        $this->ye_wu = new YeWuModel();
-    }
-
-    //主营业务页面
-    public function get_yeWu_list(){
+    //BannerModel list
+    public function get_banner_list(){
         try{
-            $sidebar='4';
             //判断过期时间
             $this->session_end();
             //判断登陆状态
             if (!session('?admin_dengluming')) {
                 return redirect('/admcncp/login');
             }
-            $list = $this->ye_wu->order('order')->paginate(4);
-            $imgpath=config("ye_wu_upload_path");
+            $list = $this->banner->order('br_order desc')->paginate(5);
+            $imgpath=config("banner_upload_path");
             $this->assign('imgpath',$imgpath);
             $this->assign('list',$list);
-            $this->assign('sidebar',$sidebar);
+            $this->assign('sidebar','4');
         }catch (\Exception $e){
+            $this->log($e->getMessage(),'error');
             $this->error($e->getMessage());
         }
-        return $this->fetch('ye_wu');
+        return $this->fetch('banner');
     }
-    //主营业务添加页面
-    public function get_yeWu_add(){
+    //Banner添加
+    public function get_banner_add(){
         try{
             //判断过期时间
             $this->session_end();
@@ -52,15 +42,14 @@ class YeWuController extends Controller
             if (!session('?admin_dengluming')) {
                 return redirect('/admcncp/login');
             }
-            $sidebar = 4;
-            $this->assign('sidebar',$sidebar);
+            $this->assign('sidebar','4');
         }catch (\Exception $e){
             $this->error($e->getMessage());
         }
-        return $this->fetch('ye_wu_add');
+        return $this->fetch('banner_add');
     }
-    //主营业务添加提交页面
-    public function post_yeWu_add(){
+    //Banner添加提交
+    public function post_banner_add(){
         try{
             //判断过期时间
             $this->session_end();
@@ -69,12 +58,12 @@ class YeWuController extends Controller
                 return redirect('/admcncp/login');
             }
             $data = input('post.');//通过助手将POST所有数据交给 data
-            $file = request()->file('pic');
+            $file = request()->file('br_pic');
             $imgname = "";
             // 移动到框架应用根目录/static/uploads/gonggao/ 目录下
             if ($file)
             {
-                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/yewu/');
+                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/banner/');
                 if ($info)
                 {
                     // 成功上传后 获取上传信息
@@ -88,23 +77,22 @@ class YeWuController extends Controller
                     $this->error('图片上传失败，请重试');
                 }
             }
-            $data['title']=addslashes($data['title']);
-            $data['content']=addslashes($data['editorValue']);
-            $this->ye_wu->data([
-                'language' => $data['language'],
-                'title' => $data['title'],
-                'pic' => $imgname,
-                'content' => $data['content'],
-                'order' => $data['order'],
+            $data['br_title']=addslashes($data['br_title']);
+            $this->banner->data([
+                'br_language' => $data['br_language'],
+                'br_title' => $data['br_title'],
+                'br_pic' => $imgname,
+                'br_order' => $data['br_order'],
             ]);
-            $this->ye_wu->save();
+            $this->banner->save();
         }catch (\Exception $e){
-            $this->error($e->getMessage());
+            $this->log($e->getMessage(),'error');
+            return show(404,'新增中农产品失败！',200);
         }
-        $this->success('添加成功！','/admcncp/yeWu');
+        return show(200,'新增中农产品成功！',200);
     }
-    //主营业务编辑页面
-    public function get_yeWu_edit(){
+    //Banner编辑
+    public function get_banner_edit(){
         try{
             //判断过期时间
             $this->session_end();
@@ -113,19 +101,18 @@ class YeWuController extends Controller
                 return redirect('/admcncp/login');
             }
             $data = input();//通过助手将POST所有数据交给 data
-            $list = $this->ye_wu->where('id',$data['id'])->find();
-            $imgpath=config("ye_wu_upload_path");
-            $sidebar = 4;
+            $list = $this->banner->where('br_id',$data['id'])->find();
+            $imgpath=config("banner_upload_path");
             $this->assign('list',$list);
             $this->assign('imgpath',$imgpath);
-            $this->assign('sidebar',$sidebar);
+            $this->assign('sidebar','4');
         }catch (\Exception $e){
             $this->error($e->getMessage());
         }
-        return $this->fetch('ye_wu_edit');
+        return $this->fetch('banner_edit');
     }
-    //主营业务编辑提交页面
-    public function post_yeWu_edit(){
+    //Banner编辑提交
+    public function post_banner_edit(){
         try{
             //判断过期时间
             $this->session_end();
@@ -134,21 +121,21 @@ class YeWuController extends Controller
                 return redirect('/admcncp/login');
             }
             $data = input('post.');//通过助手将POST所有数据交给 data
-            $validate = validate('YeWu');
+            $validate = validate('Banner');
             //验证
             if(!$validate->check($data)){
-                throw new Exception($validate->getError());
+                return show(404,$validate->getError(),200);
             }
             // 获取表单上传文件 例如上传了001.jpg
-            $file = request()->file('pic');
-            if(!$file){
-                throw new Exception('请选择图片');
+            $file = request()->file('br_pic');
+            if(is_null($file)){
+                return show(404,'请选择图片！',200);
             }
             $imgname = "";
             // 移动到框架应用根目录/static/uploads/banner/ 目录下
             if ($file)
             {
-                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/yewu/');
+                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/banner/');
                 if ($info)
                 {
                     // 成功上传后 获取上传信息
@@ -161,22 +148,21 @@ class YeWuController extends Controller
                     $this->error('图片上传失败，请重试');
                 }
             }
-            $data['title']=addslashes($data['title']);
-            $data['content']=addslashes($data['content']);
-            $this->ye_wu->save([
-                'title' => $data['title'],
-                'content' => $data['content'],
-                'pic' => $imgname,
-                'order' => $data['order'],
-                'language' => $data['language'],
-            ],['id'=>$data['id']]);
+            $data['br_title']=addslashes($data['br_title']);
+            $this->banner->save([
+                'br_title' => $data['br_title'],
+                'br_pic' => $imgname,
+                'br_order' => $data['br_order'],
+                'br_language' => $data['br_language'],
+            ],['br_id'=>$data['br_id']]);
         }catch (\Exception $e){
-            $this->error($e->getMessage());
+            $this->log($e->getMessage(),'error');
+            return show(404,'编辑中农产品失败！',200);
         }
-        return $this->success('编辑成功！','/admcncp/yeWu');
+        return show(200,'编辑中农产品成功！',200);
     }
-    //主营业务删除页面
-    public function get_yeWu_del(){
+    //Banner删除
+    public function get_banner_del(){
         try{
             //判断过期时间
             $this->session_end();
@@ -186,10 +172,11 @@ class YeWuController extends Controller
             }
             $data = input();//通过助手将POST所有数据交给 data
 
-            $this->ye_wu->destroy($data['id']);
+            $this->banner->destroy($data['id']);
         }catch (\Exception $e){
             $this->error($e->getMessage());
         }
-        $this->success('删除成功！','/admcncp/yeWu');
+//        return show(200,'删除成功！',200);
+        $this->success('删除成功！');
     }
 }

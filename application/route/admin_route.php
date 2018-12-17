@@ -40,11 +40,11 @@ Route::get('admcncp/productEdit/:id','admin/product/get_product_edit');
 Route::post('admcncp/productEdit/','admin/product/post_product_edit');
 Route::get('admcncp/productDel/:id','admin/product/get_product_del');
 
-//主营业务
-Route::get('admcncp/yeWu','admin/YeWu/get_yeWu_list');
-Route::get('admcncp/yeWuAdd','admin/YeWu/get_yeWu_add');
-Route::post('admcncp/yeWuAdd','admin/YeWu/post_yeWu_add');
-Route::get('admcncp/yeWuEdit/:id','admin/YeWu/get_yeWu_edit');
-Route::post('admcncp/yeWuEdit/:id','admin/YeWu/post_yeWu_edit');
-Route::get('admcncp/yeWuDel/:id','admin/YeWu/get_yeWu_del');
+//banner管理
+Route::get('admcncp/banner','admin/banner/get_banner_list');
+Route::get('admcncp/bannerAdd','admin/banner/get_banner_add');
+Route::post('admcncp/bannerAdd','admin/banner/post_banner_add');
+Route::get('admcncp/bannerEdit/:id','admin/banner/get_banner_edit');
+Route::post('admcncp/bannerEdit','admin/banner/post_banner_edit');
+Route::get('admcncp/bannerDel/:id','admin/banner/get_banner_del');
 ?>
