@@ -1,18 +1,18 @@
 .head-boom{
-    height: 30px;
+    height: 50px;
     background-color: #8dbe42;
 }
 .foot-text li{
     float: left;
     z-index: 2;
-    margin:0 0  0 20px;
+    margin:15px 0  0 20px;
 }
 .foot-text li a{
     font-size:14px;
     font-family:FZLTXHK;
     font-weight:500;
     color:#F2F2F2;
-    line-height: 31px;
+
 }
 .foot-text li a:hover{
     color:#FFFFFF;
@@ -24,5 +24,10 @@
         font-weight:400;
         color:rgba(188,235,117,1);
         line-height: 36px;
+    }
+    .foot-text li{
+        float: left;
+        z-index: 2;
+        margin:7px 0  0 20px;
     }
 }
