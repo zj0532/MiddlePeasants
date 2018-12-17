@@ -37,7 +37,7 @@ Route::get('admcncp/product/','admin/product/get_product_list');
 Route::get('admcncp/productAdd','admin/product/get_product_add');
 Route::post('admcncp/productAdd','admin/product/post_product_add');
 Route::get('admcncp/productEdit/:id','admin/product/get_product_edit');
-Route::post('admcncp/productEdit/:id','admin/product/post_product_edit');
+Route::post('admcncp/productEdit/','admin/product/post_product_edit');
 Route::get('admcncp/productDel/:id','admin/product/get_product_del');
 
 //主营业务

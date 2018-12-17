@@ -9,6 +9,7 @@ $(".form-signin").on("click", "#btn_login", function() {
         break;
       default:
         alert(data.message);
+          window.location.replace("/admcncp/login");
     }
   });
 });

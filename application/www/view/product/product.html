@@ -41,43 +41,18 @@
                 <div class="col-md-12" style="height: 150px"></div>
                 <!--羊颈排-->
                 <div class="col-md-12">
+                    {volist name="list" id="vo" }
                     <div class="col-md-4">
-                        <img src="/static/www/img/product/yang_jing_pai.png" style="width: 100%">
+                        <img src="{$product_pic}{$vo.pt_pic}" style="width: 100%">
                         <div class="col-md-12" style="background:rgba(231,231,231,1);">
-                            <h4>羊颈排</h4>
+                            <h4>{$vo.pt_title}</h4>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="/static/www/img/product/yang_pai.png" style="width: 100%">
-                        <div class="col-md-12" style="background:rgba(231,231,231,1);">
-                            <h4>羊排</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/static/www/img/product/yang_qian_jian.png" style="width: 100%">
-                        <div class="col-md-12" style="background:rgba(231,231,231,1);">
-                            <h4>羊前腱</h4>
-                        </div>
-                    </div>
-                </div>
-                <!--行高-->
-                <div class="col-md-12" style="height: 46px"></div>
-                <!--羊腿-->
-                <div class="col-md-12">
-                    <div class="col-md-4">
-                        <img src="/static/www/img/product/yang_tui.png" style="width: 100%">
-                        <div class="col-md-12" style="background:rgba(231,231,231,1);">
-                            <h4>羊腿</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/static/www/img/product/yang_rou_juan.png" style="width: 100%">
-                        <div class="col-md-12" style="background:rgba(231,231,231,1);">
-                            <h4>羊肉卷</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
+                        {if $i%3 == 0}
+                            <!--行高-->
+                            <div class="col-md-12" style="height: 46px"></div>
+                        {/if}
+                    {/volist}
                 <!--行高-->
                 <div class="col-md-12" style="height: 111px"></div>
             </div>

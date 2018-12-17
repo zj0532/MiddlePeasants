@@ -33,6 +33,34 @@
 
   $(function() {
     $('select.styled').customSelect();
+
+      $('#product_add').click(function () {
+          var formData = new FormData($('#product_from_add')[0]);
+          var form_type = $('#product_type').val();
+          if(form_type == '1'){
+              var url = '/admcncp/productAdd/';
+          }else {
+              var url = '/admcncp/productEdit/';
+          }
+
+          $.ajax({
+              url:url,
+              type: 'POST',
+              data: formData,
+              async: false,
+              cache: false,
+              contentType: false,
+              processData: false,
+              success: function (data) {
+                    if(data.status == 200){
+                        alert(data.message);
+                        location.href = "/admcncp/product/";
+                    }else{
+                        alert(data.message);
+                    }
+              }
+          })
+      })
   });
 </script>
 

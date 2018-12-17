@@ -12,18 +12,19 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Exception;
 use think\Request;
-use app\admin\model\ProductModel;
+
+use think\Log;
 
 class ProductController extends Controller
 {
-    private $product;
+
     public function __construct(Request $request = null)
     {
         parent::__construct($request);
-        $this->product = new ProductModel();
+
     }
 
-    //迪拜投资房产投资优势
+    //中农产品list
     public function get_product_list(){
         try{
             $sidebar='3';
@@ -39,11 +40,12 @@ class ProductController extends Controller
             $this->assign('list',$list);
             $this->assign('sidebar',$sidebar);
         }catch (\Exception $e){
+            Log::write($e->getMessage(),'error');
             $this->error($e->getMessage());
         }
         return $this->fetch('product');
     }
-    //迪拜投资房产投资优势添加
+    //中农产品添加
     public function get_product_add(){
         try{
             //判断过期时间
@@ -59,7 +61,7 @@ class ProductController extends Controller
         }
         return $this->fetch('product_add');
     }
-    //迪拜投资房产投资优势添加提交
+    //中农产品添加提交
     public function post_product_add(){
         try{
             //判断过期时间
@@ -93,16 +95,16 @@ class ProductController extends Controller
                 'pt_language' => $data['pt_language'],
                 'pt_title' => $data['pt_title'],
                 'pt_pic' => $imgname,
-                'pt_content' => $data['editorValue'],
                 'pt_order' => $data['pt_order'],
             ]);
             $this->product->save();
         }catch (\Exception $e){
-            $this->error($e->getMessage());
+            Log::write($e->getMessage(),'error');
+            return show(404,'新增中农产品失败！',200);
         }
-        $this->success('添加成功！','/admcncp/product');
+        return show(200,'新增中农产品成功！',200);
     }
-    //迪拜投资房产投资优势编辑
+    //中农产品编辑
     public function get_product_edit(){
         try{
             //判断过期时间
@@ -123,7 +125,7 @@ class ProductController extends Controller
         }
         return $this->fetch('product_edit');
     }
-    //迪拜投资房产投资优势编辑提交
+    //中农产品编辑提交
     public function post_product_edit(){
         try{
             //判断过期时间
@@ -133,21 +135,21 @@ class ProductController extends Controller
                 return redirect('/admcncp/login');
             }
             $data = input('post.');//通过助手将POST所有数据交给 data
-            $validate = validate('ptShi');
+            $validate = validate('Product');
             //验证
             if(!$validate->check($data)){
-                throw new Exception($validate->getError());
+                return show(404,$validate->getError(),200);
             }
             // 获取表单上传文件 例如上传了001.jpg
             $file = request()->file('pt_pic');
             if(!$file){
-                throw new Exception('请选择图片');
+                return show(404,'请选择图片！',200);
             }
             $imgname = "";
             // 移动到框架应用根目录/static/uploads/banner/ 目录下
             if ($file)
             {
-                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/youshi/');
+                $info = $file->rule('uniqid')->move(ROOT_PATH . 'public/static/uploads/product/');
                 if ($info)
                 {
                     // 成功上传后 获取上传信息
@@ -161,20 +163,19 @@ class ProductController extends Controller
                 }
             }
             $data['pt_title']=addslashes($data['pt_title']);
-            $data['pt_content']=addslashes($data['pt_content']);
             $this->product->save([
                 'pt_title' => $data['pt_title'],
-                'pt_content' => $data['pt_content'],
                 'pt_pic' => $imgname,
                 'pt_order' => $data['pt_order'],
                 'pt_language' => $data['pt_language'],
             ],['pt_id'=>$data['pt_id']]);
         }catch (\Exception $e){
-            $this->error($e->getMessage());
+            Log::write($e->getMessage(),'error');
+            return show(200,'编辑中农产品失败！',200);
         }
-        return $this->success('编辑成功！','/admcncp/product');
+        return show(200,'编辑中农产品成功！',200);
     }
-    //迪拜投资房产投资优势删除
+    //中农产品删除
     public function get_product_del(){
         try{
             //判断过期时间
@@ -189,6 +190,7 @@ class ProductController extends Controller
         }catch (\Exception $e){
             $this->error($e->getMessage());
         }
-        $this->success('删除成功！','/admcncp/product');
+//        return show(200,'删除成功！',200);
+        $this->success('删除成功！');
     }
 }
