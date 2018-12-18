@@ -1,19 +1,19 @@
 h6{
-    font-size:11px;
+    font-size:14px;
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(92,92,92,1);
     line-height:17px;
 }
 h7{
-    font-size:14px;
+    font-size:16px;
     font-family: FZLTXHK;
     font-weight:600;
     color:rgba(92,92,92,1);
     line-height:21px;
 }
 h8{
-    font-size:7px;
+    font-size:14px;
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(115,115,115,1);
@@ -27,7 +27,7 @@ h9{
     line-height:35px;
 }
 h10{
-    font-size:8px;
+    font-size:12px;
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(115,115,115,1);
@@ -101,7 +101,7 @@ small{
     line-height:17px;
 }
 .banner-text span{
-    font-size:11px;
+    /*font-size:12px;*/
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(141,190,66,1);
@@ -113,6 +113,39 @@ small{
 .img-2{
     width:539px;
     height:340px;
+}
+.title{
+    font-size: 32px;
+    margin-bottom: 0;
+}
+.font-white{
+    color: #ffffff;
+}
+.small{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+/*.text p{*/
+    /*font-size: 16px;*/
+    /*margin-top: 20px;*/
+    /*font-weight: 400;*/
+/*}*/
+.text-margin-top-10{
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.text-margin-top-20{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.text{
+    font-size: 16px;
+    font-weight: 400;
+}
+.button-margin-top{
+    margin-top: 10px;
 }
 @media (min-width:1367px) {
     .new_bj{
@@ -128,6 +161,9 @@ small{
     .img-2{
         width:600px;
         height:400px;
+    }
+    .button-margin-top{
+        margin-top: 30px;
     }
 }
 

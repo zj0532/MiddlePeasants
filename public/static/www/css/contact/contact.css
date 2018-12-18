@@ -1,8 +1,11 @@
 h5{
-    font-size:14px;
+    font-size:16px;
     font-family:FZLTHJW--GB1-0;
     font-weight:normal;
     color:rgba(165,164,164,1);
+}
+h6{
+    font-size: 16px;
 }
 .underline{
     height:1px;

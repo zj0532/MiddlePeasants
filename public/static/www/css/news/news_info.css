@@ -6,11 +6,17 @@ h3{
     line-height:18px;
 }
 h6{
-    font-size:11px;
+    font-size:16px;
     font-family: FZLTXHK, serif;
     font-weight:400;
     color:rgba(129,129,129,1);
     line-height:21px;
+}
+h5{
+    font-size:16px;
+}
+h7{
+    font-size:16px;
 }
 .info-img{
     width:124px;

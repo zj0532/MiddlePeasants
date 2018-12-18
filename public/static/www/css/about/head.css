@@ -5,10 +5,10 @@
 .foot-text li{
     float: left;
     z-index: 2;
-    margin:15px 0  0 20px;
+    margin:15px 0  0 40px;
 }
 .foot-text li a{
-    font-size:14px;
+    font-size:16px;
     font-family:FZLTXHK;
     font-weight:500;
     color:#F2F2F2;
@@ -28,6 +28,6 @@
     .foot-text li{
         float: left;
         z-index: 2;
-        margin:7px 0  0 20px;
+        margin:7px 0  0 70px;
     }
 }

@@ -46,7 +46,7 @@ h1{
     height:222px;
 }
 .enterprise-mission p{
-    font-size:11px;
+    /*font-size:11px;*/
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(91,91,91,1);
@@ -71,7 +71,7 @@ h1{
     line-height:17px;
 }
 .text-two p{
-    font-size:11px;
+    /*font-size:11px;*/
     font-family:FZLTXHK;
     font-weight:400;
     color:rgba(255,255,255,1);
@@ -113,7 +113,7 @@ h1{
         color:rgba(120,120,120,1);
     }
     .enterprise-mission p{
-        font-size:16px;
+        /*font-size:16px;*/
         font-family:FZLTXHK;
         font-weight:400;
         color:rgba(91,91,91,1);

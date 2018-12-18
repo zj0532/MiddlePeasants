@@ -3,10 +3,10 @@
     background-color: #8dbe42;
 }
 .foot-text li{
-    font-size: 14px;
+    font-size: 16px;
     color: #FFF;
     line-height: 50px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .head-bj h6{
     font-size:11px;
@@ -27,6 +27,6 @@
         font-size: 16px;
         color: #FFF;
         line-height: 50px;
-        margin-left: 20px;
+        margin-left: 70px;
     }
 }
