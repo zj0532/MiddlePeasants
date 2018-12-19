@@ -10,7 +10,7 @@
             {volist name="list" id="vo"}
             <div class="col-md-12 padding-0">
                 <div class="col-md-3" style="padding-left: 0">
-                    <img src="{$imgpath}{$vo.ns_img}" width="100%">
+                    <img src="{$imgpath}{$vo.ns_img}" width="100%" alt="">
                 </div>
                 <div class="col-md-7">
                     <h5>{$vo.ns_title}</h5>
@@ -19,7 +19,7 @@
                     </h7>
                 </div>
                 <div class="col-md-2" style="margin-top: 35px">
-                    <a  href="/newsInfo/{$vo.ns_id}"><img class="info-img" src="/static/www/img/news/info.png"></a>
+                    <a class="btn btn-default new-info-button" href="/newsInfo/{$vo.ns_id}" role="button">查询详情</a>
                 </div>
                 <div class="col-md-12" style="height: 15px;"></div>
                 <!--线-->

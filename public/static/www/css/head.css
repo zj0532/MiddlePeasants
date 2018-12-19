@@ -24,4 +24,8 @@
         color:rgba(0,130,130,1);
         margin-top: 5px;
     }
+    .text-menu ul li{
+        float: left;
+        margin: -4px 0 0 28px;
+    }
 }

@@ -22,3 +22,12 @@ h7{
     width:124px;
     height:33px;
 }
+.new-info-button{
+    color:#dbdbdb;
+    border-radius:10%;
+}
+.new-info-button:hover{
+    color:#0f0f0f;
+    border-radius:10%;
+    background: #ffffff;
+}
