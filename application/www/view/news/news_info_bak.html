@@ -1,0 +1,70 @@
+{include file="public/header" /}
+{include file="public/head" /}
+{include file="public/news/head" /}
+<link type="text/css" href="/static/www/css/news/news_info.css" rel="stylesheet">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="col-md-12" style="height: 29px"></div>
+            <!--标题-->
+            <div class="col-md-12 text-center">
+                <h3>{$result.ns_title}</h3>
+            </div>
+            <div class="col-md-12" style="height: 16px"></div>
+            <!--线-->
+            <div class="col-md-12" style="border: 1px solid #A9A9A9"></div>
+            <div class="col-md-12" style="height: 23px"></div>
+            <!--第一层-->
+            <div class="col-md-12">
+                <div class="col-md-5">
+                    <img src="/static/www/img/news/yang_tou.png" width="100%">
+                </div>
+                <div class="col-md-7">
+                    <h6>春渐暖，湖羊美，到了品尝美味羊肉的最佳季节。羊肉鲜美的味道常常让人回味不已。羊的品种有很多，黄羊、山羊、绵羊、羚羊......哪一种羊的味道最鲜美呢？</h6>
+                    <h6>俗话说：“一千个读者，就有一千个哈姆雷特”，哪一种羊的肉最鲜美，答案当然是——湖羊。</h6>
+                    <h6>湖羊是我国特有的白色羔皮绵羊地方品种，也是我国一级保护地方畜禽品种，被列入《国家级畜禽遗传资源保护名录》。</h6>
+                    <h6>湖羊的前世</h6>
+                    <h6>
+                        据了解，湖羊源于蒙古羊，已有1000多年历史。早在晋朝《尔雅》上就有“吴美”的记载。南宋时，湖羊随居民大量南移而被携带至江南太湖流域一带，
+                        经人们长期驯养和选育，逐渐形成了如今的湖羊品种。
+                    </h6>
+                </div>
+            </div>
+            <div class="col-md-12" style="height: 58px"></div>
+            <!--第二层-->
+            <div class="col-md-12">
+                <div class="col-md-7">
+                    <h6>湖羊体态特征</h6>
+                    <h6>湖羊全身被白毛，体格中等，头狭长而清秀，鼻骨隆起，眼大突出，耳大下垂，不管是公羊还是母羊都没有角。它的颈细长，体躯长，胸较狭窄，背腰平直，腹微下垂，四肢偏细而高。</h6>
+                    <h6>湖羊的皮和毛</h6>
+                    <h6>湖羊的皮一般可分为湖羊羔皮、袍羔皮及羊皮三种。</h6>
+                    <h6>
+                        湖羊羔皮又称小湖羊皮，是羔羊出生当天宰剥的皮板，具有皮板轻柔、毛色洁白、花纹呈波浪状、花案清晰、紧贴皮板、扑面不散、有丝样光泽、
+                        光润美观等特点，享有“软宝石”之称。经制作、染色后，可制成各种精美时装、帽子、披肩、围巾、领子等。
+                    </h6>
+                    <h6>袍羔皮是2-4月羔羊所宰剥的皮板，毛长5-6cm，光泽丰润、花纹松散、皮板轻薄、保暖性能良好，是制裘的好原料。</h6>
+                </div>
+                <div class="col-md-5">
+                    <img src="/static/www/img/news/yang_rou_juan.png" width="100%">
+                </div>
+            </div>
+            <div class="col-md-12" style="height: 42px"></div>
+            <!--第三层-->
+            <div class="col-md-12">
+                <h6>大湖羊皮也称“老羊皮”，是10月以上的大湖羊所宰剥的皮板，毛长6-9cm，是制革的好原料。此外，湖羊的毛属异质羊毛，非常适宜织地毯和粗呢绒。</h6>
+                <h6>湖羊的肉</h6>
+                <h6>湖羊肉质细嫩、鲜美、膻味轻，净肉率高，不管是热气沸腾的涮羊肉、色泽红亮的红烧羊肉、酥而不腻黄酒羊肉，还是原汁原味的白切羊肉都是秋冬季节羊肉的最佳吃法。</h6>
+            </div>
+            <div class="col-md-12" style="height: 81px"></div>
+            <div class="col-md-7"></div>
+            <div class="col-md-5">
+                <h6><a href="/newsInfo/{$result.up.ns_id}">上一篇:{$result.up.ns_title}</a></h6>
+                <h6><a href="/newsInfo/{$result.next.ns_id}">下一篇:{$result.next.ns_title}</a></h6>
+            </div>
+            <div class="col-md-12" style="height: 43px"></div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+{include file="public/foot" /}
